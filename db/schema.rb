@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140507154836) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "screencasts", force: true do |t|
     t.string   "title"
     t.text     "summary"

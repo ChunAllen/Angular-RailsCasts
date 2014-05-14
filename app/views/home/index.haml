@@ -1,0 +1,16 @@
+%div{"ng-controller" => "ScreencastsCtrl"}
+  %h2.header-title AngularCasts
+  #screencast-list-container
+    %ul
+      %li{"ng-click" => "showScreencast(screencast, $index)", "ng-repeat" => "screencast in screencasts"}
+        %h3{"ng-class" => "{active: $index == selectedRow}"}
+          {{screencast.title}}
+          %small ({{screencast.duration}})
+  #screencast-view-container{"ng-show" => "selectedScreencast"}
+    %h2 {{selectedScreencast.title}}
+    %p {{selectedScreencast.summary}}
+    %video.vid-player{:autoplay => "true", :controls => "true", "ng-src" => "{{selectedScreencast.video_url}}"}
+    %p
+      Published at {{selectedScreencast.published_at | date: 'mediumDate'}}
+      \-
+      %a{"ng-href" => "{{selectedScreencast.link}}"} {{selectedScreencast.link}}

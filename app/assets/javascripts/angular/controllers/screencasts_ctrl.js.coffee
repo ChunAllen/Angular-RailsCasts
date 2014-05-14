@@ -2,7 +2,6 @@ App.controller 'ScreencastsCtrl', ['$scope', 'Screencast', ($scope, Screencast) 
   # Attributes accessible on the view
   $scope.selectedScreencast = null
   $scope.selectedRow        = null
-  $scope.screencasts = Screencast.query()
 
   # Gather the screencasts and set the selected one to the first on success
   $scope.screencasts = Screencast.query ->
@@ -11,6 +10,6 @@ App.controller 'ScreencastsCtrl', ['$scope', 'Screencast', ($scope, Screencast) 
 
   # Set the selected screencast to the one which was clicked
   $scope.showScreencast = (screencast, row) ->
-    $scope.selectedScreencast = screencast
+    $scope.selectedScreencast = $scope.screencasts[row]
     $scope.selectedRow = row
 ]
