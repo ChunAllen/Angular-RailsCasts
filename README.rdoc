@@ -4,7 +4,8 @@ This is a Rails 4 application with AngularJS.
 Check it out on http://angularrailscasts.herokuapp.com/
 
 
-## Import Railscasts Videos
+# Import Railscasts Videos
+
   $ rails c
   $ require 'screencast_importer'
   => true
