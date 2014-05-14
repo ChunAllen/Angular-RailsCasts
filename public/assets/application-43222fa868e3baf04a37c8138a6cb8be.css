@@ -1,0 +1,116 @@
+/* line 1, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+body {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  background-color: #ddd;
+  margin: 0px;
+}
+
+/* line 8, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+h2.header-title {
+  padding-left: 10px;
+}
+
+/* line 12, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+.vid-player {
+  width: 1000px;
+  height: 500px;
+}
+
+/* line 17, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+header {
+  background-color: #4F4F4F;
+  color: #fff;
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+/* line 31, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-ctrl {
+  background-color: #fff;
+  position: absolute;
+  top: 37px;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+}
+
+/* line 40, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container {
+  background-color: #fff;
+  position: absolute;
+  min-height: 700px;
+  width: 300px;
+  top: 37px;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 50, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+/* line 54, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container ul li {
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  padding: 0 10px;
+}
+/* line 60, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container h3 {
+  font-size: 14px;
+}
+/* line 62, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container h3 small {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: normal;
+}
+/* line 67, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-list-container h3.active {
+  color: red;
+}
+
+/* line 73, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-view-container {
+  position: absolute;
+  border-left: 1px solid #d0d0d0;
+  top: 37px;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  min-height: 700px;
+  padding: 5px 25px;
+}
+/* line 84, /Users/allenchun/Sites/tutorials/angular_casts/app/assets/stylesheets/home.css.scss */
+#screencast-view-container #player {
+  border: 1px solid #000;
+  max-width: 800px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
